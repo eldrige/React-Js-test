@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   FaShoppingBag,
   FaBars,
@@ -11,12 +11,29 @@ import {
 
 const Navbar = () => {
   const [showNav, setShowFullNav] = useState(false);
+  const [navScrolled, setNavScrolled] = useState(false);
+
+  useEffect(() => {
+    changeBackground();
+    window.addEventListener('scroll', changeBackground);
+  });
+
   const toggleNav = () => {
     setShowFullNav(!showNav);
   };
 
+  const changeBackground = () => {
+    console.log(window.scrollY);
+    window.scrollY >= 66 ? setNavScrolled(true) : setNavScrolled(false);
+  };
+
   return (
-    <header className="container-fluid" id="navbar">
+    <header
+      className={
+        navScrolled ? 'container-fluid' : 'container-fluid bg-transparent'
+      }
+      id="navbar"
+    >
       <div className="row">
         <ul>
           <li>

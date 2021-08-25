@@ -1,5 +1,4 @@
 import React from 'react';
-import { Image } from 'react-bootstrap';
 
 const Hero = () => {
   return (
@@ -7,7 +6,12 @@ const Hero = () => {
       <div className="row">
         <div className="col-md-6">
           <div className="img-container">
-            {/* <Image src="/images/eggs.jpg" fluid style={{ height: '50%' }} /> */}
+            <img
+              src="/images/egg.webp"
+              alt="omelete"
+              width="100%"
+              height="585rem"
+            />
           </div>
         </div>
         <div className="col-md-6 my-5">
