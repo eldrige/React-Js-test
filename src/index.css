@@ -1,5 +1,21 @@
-body {
+*, *::before, *::after{
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
+}
+
+:root {
+  --footer-bg: #eee4d5;
+  --light-brown: #c39c6f;
+  --light-blue: #cadff0;
+  --hero-bg: #d8bb7f;  
+  --deep-brown: #c39c6f;
+  --title: 1.1rem;
+
+}
+
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +23,62 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Navbar Styling */
+header#navbar{
+  background: var(--footer-bg)
+}
+
+header#navbar ul{
+  padding:0.8rem 1rem 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header#navbar ul li {
+  list-style-type: none;
+  font-weight: bold;
+  font-size: var(--title)
+}
+
+.icon{
+  cursor: pointer;
+}
+
+.icon.social{
+  margin: 0 1rem;
+}
+
+.icon.shoppingBag{
+  color: black;
+  background: transparent;
+  font-size: 1.1rem;
+}
+
+header#navbar section div.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+header#navbar section div.content p{
+  font-size: 2.4rem;
+}
+header#navbar section div.content p:hover{
+  border-bottom: 1px solid var(--deep-brown);
+  cursor: pointer;
+}
+header#navbar section div.content p span.active{
+  color: var(--deep-brown)
+}
+
+header#navbar section div.content p span.term{
+  font-size: 1.2rem;
+}
+
+/* Hero Styling */
+
+section#hero{
+  height: 94vh;
 }
