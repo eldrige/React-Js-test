@@ -158,3 +158,80 @@ section#topProducts .custom-card .desc{
   font-size: 1rem;
   margin-bottom: 0rem;
 }
+
+/* Footer Styling */
+footer#footer{
+  height: 65vh;
+  background: var(--footer-bg)
+}
+
+footer#footer .email{
+  display: flex; 
+  flex-direction: column;
+  width: 85%;
+  padding: 1rem 2rem;
+}
+
+footer#footer .mail p{
+  font-size: 0.87rem;
+}
+
+footer#footer p{
+  font-size: 0.87rem;
+}
+
+footer#footer h5{
+  font-weight: bold;
+  font-size: 0.96rem;
+  text-decoration: underline;
+  text-decoration-color: var(--deep-brown);
+}
+
+footer#footer h5:hover{
+  color: var(--deep-brown);
+  cursor: pointer;
+}
+
+footer#footer h4{
+  font-weight: bold;
+  font-size: 0.96rem;
+}
+
+
+footer#footer .mail .input-wrapper{
+  border-bottom: 2px solid var(--black);
+  width: 95%;
+}
+
+footer#footer .mail input{
+  border: none;
+  background: none;
+}
+
+footer#footer .mail button{
+  width: 6rem;
+  font-weight: bold;
+  background: transparent;
+  border: 0.3rem solid var(--black);
+  cursor: pointer;
+  padding: .2rem .3rem;
+  align-self: center;
+}
+
+footer#footer .p-option{
+  font-size: 2rem;
+  margin: 0 0.3rem 0 0;
+  width: 2rem;
+}
+
+footer#footer .shipping{
+  font-size: 3rem;
+  font-weight: bold;
+  width: 7rem;
+  /* height: 7rem; */
+}
+
+footer#footer .social{
+  font-size: 1.7rem;
+}
+

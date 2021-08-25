@@ -1,5 +1,4 @@
 import React from 'react';
-import { Image } from 'react-bootstrap';
 let fakeProducts = [
   'Organic granola "Frühsportfreunde" ',
   'Greeting Card Set “Dancing Couple”',
