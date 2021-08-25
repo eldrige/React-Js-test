@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
 *, *::before, *::after{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
+
 
 :root {
   --footer-bg: #eee4d5;
@@ -11,6 +15,7 @@
   --hero-bg: #d8bb7f;  
   --deep-brown: #c39c6f;
   --title: 1.1rem;
+  --black: #000000;
 
 }
 
@@ -81,4 +86,42 @@ header#navbar section div.content p span.term{
 
 section#hero{
   height: 94vh;
+  background: var(--hero-bg)
+}
+
+section#hero div.hero-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section#hero div.img-container{
+
+}
+section#hero h1{
+  text-align: center;
+  font-size: 4rem;
+  font-weight:150;
+  font-family: 'Lora', serif;
+}
+
+section#hero h3{
+  font-weight: 700;
+  margin-bottom: 5rem;
+  color: var(--black);
+  font-size: 2rem;
+
+}
+
+section#hero button{
+  border: 0.3rem solid black;
+  background: var(--hero-bg);
+  width: 13rem;
+  padding: 0.3rem 0.1rem;
+}
+
+section#hero button:hover{
+  border: none;
+  background: var(--deep-brown);
 }
