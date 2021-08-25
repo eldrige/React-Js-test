@@ -1,6 +1,11 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
-let fakeProducts = ['one', 'two', 'three', 'four'];
+let fakeProducts = [
+  'Organic granola "Frühsportfreunde" ',
+  'Greeting Card Set “Dancing Couple”',
+  'Besswap wrap medium',
+  'Cook book + Beeswax wraps Bundle',
+];
 
 const TopProducts = () => {
   return (
@@ -10,12 +15,11 @@ const TopProducts = () => {
           {fakeProducts.map((product) => (
             <div className="col-md-3">
               <div className="custom-card">
-                {/* <img src="" alt="" /> */}
                 <div className="image-item">
-                  <Image src="/images/eggs.jpg" fluid />
+                  {/* <Image src="/images/eggs.jpg" fluid /> */}
                 </div>
-                <p className="desc">Greeting Card set "Dancing Couple"</p>
-                <p className="price">7,5 $</p>
+                <p className="desc ">{product}</p>
+                <p className="price">3,90 €</p>
               </div>
             </div>
           ))}

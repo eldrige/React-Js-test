@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   FaShoppingBag,
   FaBars,
@@ -23,7 +23,6 @@ const Navbar = () => {
   };
 
   const changeBackground = () => {
-    console.log(window.scrollY);
     window.scrollY >= 66 ? setNavScrolled(true) : setNavScrolled(false);
   };
 
