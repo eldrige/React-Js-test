@@ -48,10 +48,10 @@ const ProductScreen = () => {
   };
 
   return (
-    <>
+    <section>
       <Container fluid id="productScreen">
-        <Container className="mt-5">
-          <Row className="p-2">
+        <Container>
+          <Row className="p-5">
             <Col md={1} />
             <Col md={5}>
               <div className="slider-container">
@@ -174,7 +174,7 @@ const ProductScreen = () => {
       <Recommendation />
       <Review />
       <Features />
-    </>
+    </section>
   );
 };
 

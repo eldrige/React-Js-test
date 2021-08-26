@@ -30,6 +30,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background: var(--footer-bg) */
 }
 
 /* Navbar Styling */
@@ -83,6 +84,7 @@ header#navbar section div.content p{
 header#navbar section div.content p:hover{
   border-bottom: 1px solid var(--deep-brown);
   cursor: pointer;
+  color: var(--deep-brown)
 }
 header#navbar section div.content p span.active{
   color: var(--deep-brown)

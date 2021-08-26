@@ -6,12 +6,13 @@ import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
-  FaChevronCircleDown,
+  FaChevronDown,
 } from 'react-icons/fa';
-import { Row } from 'react-bootstrap';
+import { Row, Collapse } from 'react-bootstrap';
 
 const Navbar = () => {
   const [showNav, setShowFullNav] = useState(false);
+  const [showOptions, setShowOptions] = useState(false);
   const [navScrolled, setNavScrolled] = useState(false);
 
   useEffect(() => {
@@ -21,6 +22,10 @@ const Navbar = () => {
 
   const toggleNav = () => {
     setShowFullNav(!showNav);
+  };
+
+  const toggleOptions = () => {
+    setShowOptions(!showOptions);
   };
 
   const changeBackground = () => {
@@ -50,12 +55,12 @@ const Navbar = () => {
           </li>
         </ul>
       </Row>
-      {showNav && (
+      <Collapse in={showNav}>
         <section>
           <div className="content">
             <p>Home</p>
             <p>
-              Shop <FaChevronCircleDown />
+              Shop <FaChevronDown onClick={toggleOptions} />
             </p>
             <p>Storelocator</p>
             <p>B2B</p>
@@ -74,7 +79,7 @@ const Navbar = () => {
             </p>
           </div>
         </section>
-      )}
+      </Collapse>
     </header>
   );
 };
