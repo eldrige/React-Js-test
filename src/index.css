@@ -17,6 +17,9 @@
   --title: 1.1rem;
   --black: #000000;
   --white: #ffffff;
+  --blue: #005f9a;
+  --grey: #CADFF0;
+  --pink: #EC407A;
 
 }
 
@@ -301,8 +304,16 @@ footer#footer .social{
   color: var(--black)
 }
 
-#productScreen  section.contain span.delivery{
+#productScreen  section.contain div.available{
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: green
+}
+
+#productScreen  section.contain div.delivery{
   font-weight: bold;
+  font-size: 0.87rem;
 }
 
 #productScreen .p-option{
@@ -324,4 +335,39 @@ footer#footer .social{
   color: var(--deep-brown);
   background: var(--deep-brown);
   height: 0.1rem;
+}
+
+
+/* Review styles */
+#review {
+  background: var(--blue);
+  height: 70vh;
+  color: var(--grey)
+}
+
+#review .author{
+  display: flex;
+}
+
+
+
+#review .author div.pseudo p{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: var(--pink);
+  color: var(--grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+#review .author div.stars{
+  display: flex;
+  flex-direction: column;
+}
+
+#review .author div.stars p{
+  font-size: 0.87rem;
 }
