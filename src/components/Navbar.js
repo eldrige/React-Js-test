@@ -8,6 +8,7 @@ import {
   FaLinkedin,
   FaChevronCircleDown,
 } from 'react-icons/fa';
+import { Row } from 'react-bootstrap';
 
 const Navbar = () => {
   const [showNav, setShowFullNav] = useState(false);
@@ -33,7 +34,7 @@ const Navbar = () => {
       }
       id="navbar"
     >
-      <div className="row">
+      <Row>
         <ul>
           <li>
             {showNav ? (
@@ -48,7 +49,7 @@ const Navbar = () => {
             Cart <FaShoppingBag className="icon mx-1 shoppingBag" />
           </li>
         </ul>
-      </div>
+      </Row>
       {showNav && (
         <section>
           <div className="content">

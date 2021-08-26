@@ -16,6 +16,7 @@
   --deep-brown: #c39c6f;
   --title: 1.1rem;
   --black: #000000;
+  --white: #ffffff;
 
 }
 
@@ -31,7 +32,8 @@ body {
 /* Navbar Styling */
 header#navbar{
   background: var(--footer-bg);
-  position: fixed;
+  position: sticky;
+  top: 0;
 }
 
 header#navbar ul{
@@ -60,6 +62,9 @@ header#navbar ul li {
   font-size: 1.1rem;
 }
 
+/* header#navbar section{
+  background: var(--footer-bg);
+} */
 header#navbar section div.content {
   display: flex;
   align-items: center;
@@ -235,3 +240,88 @@ footer#footer .social{
   font-size: 1.7rem;
 }
 
+
+/* Products Screen Styles */
+#productScreen{
+  background: var(--footer-bg);
+}
+
+#productScreen .detail{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#productScreen .detail .price{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  font-size: 1.3rem;
+}
+
+#productScreen p{
+  font-size: 0.87rem;
+}
+
+#productScreen h4{
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--black)
+}
+
+#productScreen section.contain{
+  width: 70%;
+  margin: 0 auto;
+}
+
+#productScreen section.contain select{
+  display: inline-block;
+  border: 0.2rem solid black;
+  background: var(--footer-bg);
+  width: 104%;
+  padding: 0.5rem 0.4rem;
+}
+
+
+#productScreen section.contain select:hover{
+  cursor: pointer;
+  background: var(--hero-bg)
+}
+
+#productScreen  section.contain button{
+  background: var(--black);
+  width: 104%;
+  padding: 0.5rem 0.4rem;
+  color: var(--white);
+  border: none;
+}
+
+#productScreen  section.contain button:hover{
+  background: var(--hero-bg);
+  color: var(--black)
+}
+
+#productScreen  section.contain span.delivery{
+  font-weight: bold;
+}
+
+#productScreen .p-option{
+  font-size: 2.5rem;
+  margin: 0 0.7rem 0 0;
+  width: 3rem;
+}
+
+#productScreen .toggle{
+  cursor: pointer;
+}
+
+#productScreen h4{
+  font-weight: bold;
+  font-size: 0.96rem;
+}
+
+#productScreen .line{
+  color: var(--deep-brown);
+  background: var(--deep-brown);
+  height: 0.1rem;
+}
