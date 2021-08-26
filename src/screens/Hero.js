@@ -1,5 +1,6 @@
 import React from 'react';
 import TopProducts from '../components/TopProducts';
+import ImageGrid from '../components/ImageGrid';
 
 const Hero = () => {
   return (
@@ -30,6 +31,7 @@ const Hero = () => {
         </div>
       </section>
       <TopProducts />
+      <ImageGrid />
     </>
   );
 };
