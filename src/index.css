@@ -37,6 +37,7 @@ header#navbar{
   background: var(--footer-bg);
   position: sticky;
   top: 0;
+  z-index: 99;
 }
 
 header#navbar ul{
@@ -250,6 +251,28 @@ footer#footer .social{
   background: var(--footer-bg);
 }
 
+#productScreen .slider-container{
+  position: relative;
+}
+
+#productScreen .next-arrow{
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  cursor: pointer;
+}
+
+#productScreen .prev-arrow{
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  cursor: pointer;
+}
+
+#productScreen .prev-arrow.hidden, #productScreen .next-arrow.hidden{
+  display: none;
+}
+
 #productScreen .detail{
   display: flex;
   justify-content: space-evenly;
@@ -269,8 +292,12 @@ footer#footer .social{
 
 #productScreen h4{
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: var(--black)
+}
+
+#productScreen .title h4{
+  font-size: 1.5rem;
 }
 
 #productScreen section.contain{

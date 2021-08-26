@@ -3,6 +3,7 @@ import { Row, Col, Container, Button, Collapse, Image } from 'react-bootstrap';
 import Review from '../components/Review';
 import Features from '../components/Features';
 import Recommendation from '../components/Recommendation';
+import ImageShowcase from '../components/ImageShowcase';
 
 import {
   FaCcVisa,
@@ -12,10 +13,39 @@ import {
   FaCcAmazonPay,
   FaChevronDown,
   FaChevronUp,
+  FaArrowRight,
+  FaArrowLeft,
 } from 'react-icons/fa';
+
+const imgUrl = ['one.webp', 'two.webp', 'three.webp'];
 
 const ProductScreen = () => {
   const [showMaterial, setShowMaterial] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  const checkNumber = (number) => {
+    if (number > imgUrl.length - 1) {
+      return 0;
+    }
+    if (number < 0) {
+      return imgUrl.length - 1;
+    }
+    return number;
+  };
+
+  const nextImg = () => {
+    setIndex((index) => {
+      let newIndex = index + 1;
+      return checkNumber(newIndex);
+    });
+  };
+
+  const prevImg = () => {
+    setIndex((index) => {
+      let newIndex = index + 1;
+      return checkNumber(newIndex);
+    });
+  };
 
   return (
     <>
@@ -25,7 +55,17 @@ const ProductScreen = () => {
             <Col md={1} />
             <Col md={5}>
               <div className="slider-container">
-                <Image src="/images/one.webp" fluid />
+                <FaArrowLeft
+                  className={index === 0 ? 'prev-arrow hidden' : 'prev-arrow'}
+                  size={20}
+                  onClick={prevImg}
+                />
+                <Image src={`/images/${imgUrl[index]}`} fluid />
+                <FaArrowRight
+                  className={index === 2 ? 'next-arrow hidden' : 'next-arrow'}
+                  size={20}
+                  onClick={nextImg}
+                />
               </div>
             </Col>
             <Col md={5}>
@@ -130,17 +170,7 @@ const ProductScreen = () => {
           </Row>
         </Container>
       </Container>
-      <div id="card-img">
-        <div className="img-card">
-          <Image src="/images/one.webp" fluid />
-        </div>
-        <div className="img-card">
-          <Image src="/images/two.webp" fluid />
-        </div>
-        <div className="img-card">
-          <Image src="/images/three.webp" fluid />
-        </div>
-      </div>
+      <ImageShowcase />
       <Recommendation />
       <Review />
       <Features />
