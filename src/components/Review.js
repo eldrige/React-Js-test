@@ -48,7 +48,7 @@ const Review = () => {
       <Row>
         <h2 className="text-center mt-5">What our customers say:</h2>
         <Row className="p-5">
-          <Col md={2}>
+          <Col md={2} className="d-flex align-items-end justify-content-end">
             <FaArrowLeft className="mt-5 mx-5 prev" onClick={prevPerson} />
           </Col>
           <Col md={4}>
@@ -88,7 +88,7 @@ const Review = () => {
             </div>
             <p className="ml-3">{secondText}</p>
           </Col>
-          <Col md={2}>
+          <Col md={2} className="d-flex align-items-end">
             <FaArrowRight className="mt-5 next" onClick={nextPerson} />
           </Col>
         </Row>

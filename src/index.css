@@ -170,7 +170,8 @@ section#topProducts .custom-card .desc{
 /* Footer Styling */
 footer#footer{
   height: 65vh;
-  background: var(--footer-bg)
+  background: var(--footer-bg);
+  padding:1rem 0;
 }
 
 footer#footer .email{
@@ -314,6 +315,17 @@ footer#footer .social{
 #productScreen  section.contain div.delivery{
   font-weight: bold;
   font-size: 0.87rem;
+}
+
+div#card-img{
+  display: flex;
+  flex-direction: row;
+  padding: 0 ;
+}
+
+#card-img .img-card{
+  flex: 1;
+  margin: 0;
 }
 
 #productScreen .p-option{

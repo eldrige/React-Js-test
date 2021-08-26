@@ -24,7 +24,7 @@ const ProductScreen = () => {
             <Col md={1} />
             <Col md={5}>
               <div className="slider-container">
-                <Image src="/images/eggs.jpg" fluid />
+                <Image src="/images/one.webp" fluid />
               </div>
             </Col>
             <Col md={5}>
@@ -98,13 +98,13 @@ const ProductScreen = () => {
                         <h4>Material</h4>
                         {showMaterial ? (
                           <FaChevronUp
-                            class="toggle"
+                            className="toggle"
                             size={20}
                             onClick={() => setShowMaterial(!showMaterial)}
                           />
                         ) : (
                           <FaChevronDown
-                            class="toggle"
+                            className="toggle"
                             size={20}
                             onClick={() => setShowMaterial(!showMaterial)}
                           />
@@ -129,6 +129,17 @@ const ProductScreen = () => {
           </Row>
         </Container>
       </Container>
+      <div id="card-img">
+        <div className="img-card">
+          <Image src="/images/one.webp" fluid />
+        </div>
+        <div className="img-card">
+          <Image src="/images/two.webp" fluid />
+        </div>
+        <div className="img-card">
+          <Image src="/images/three.webp" fluid />
+        </div>
+      </div>
       <Review />
       <Features />
     </>

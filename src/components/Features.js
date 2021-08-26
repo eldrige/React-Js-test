@@ -1,12 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import {
-  FaFacebook,
-  FaHeart,
-  FaLock,
-  FaPercentage,
-  FaTelegramPlane,
-} from 'react-icons/fa';
+import { FaHeart, FaLock, FaPercentage, FaTelegramPlane } from 'react-icons/fa';
 
 const Features = () => {
   return (
