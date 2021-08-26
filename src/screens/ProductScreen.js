@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Row, Col, Container, Button, Collapse, Image } from 'react-bootstrap';
 import Review from '../components/Review';
 import Features from '../components/Features';
+import Recommendation from '../components/Recommendation';
 
 import {
   FaCcVisa,
@@ -119,7 +120,7 @@ const ProductScreen = () => {
                           organic paint, free from mineral oil.
                         </p>
                       </Collapse>
-                      <div className="my-2 line" />
+                      <div className="mt-2 mb-5 line" />
                     </Row>
                   </section>
                 </Row>
@@ -140,6 +141,7 @@ const ProductScreen = () => {
           <Image src="/images/three.webp" fluid />
         </div>
       </div>
+      <Recommendation />
       <Review />
       <Features />
     </>

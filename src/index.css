@@ -415,3 +415,32 @@ div#card-img{
   font-size: 0.9rem;
   text-align: center;
 }
+
+/* Recommendation styles */
+
+#recomended{
+  background: var(--footer-bg);
+  display: flex;
+  height: 60vh;
+  padding: 2rem 1rem;
+}
+
+#recomended h5,h2{
+  color: var(--blue)
+}
+
+#recomended h5{
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#recomended img{
+  cursor: pointer;
+}
+
+#recomended img:hover{
+  transform:scale(1.04)
+}
+
+
