@@ -1,4 +1,4 @@
-import Hero from './screens/Hero';
+import HomeScreen from './screens/HomeScreen';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ProductScreen from './screens/ProductScreen';
@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Navbar />
       <Route path="/product" component={ProductScreen} exact />
-      <Route path="/" component={Hero} exact />
+      <Route path="/" component={HomeScreen} exact />
       <Footer />
     </Router>
   );

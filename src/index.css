@@ -138,7 +138,7 @@ section#hero button:hover{
 section#topProducts{
   background: var(--footer-bg);
   padding: 1rem 1.2rem;
-  height: 55vh;
+  height: 60vh;
 }
 
 section#topProducts .custom-card{
@@ -527,3 +527,13 @@ div#card-img{
   border: none;
 }
 
+/* ! Sponsors styles */
+#sponsors{
+  background: var(--footer-bg);
+  height: 30vh;
+  color: var(--deep-brown)
+}
+
+#sponsors h1.text-center.text-black{
+  font-size: 1.5rem;
+}
