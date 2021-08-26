@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import {
   FaShoppingBag,
   FaBars,
@@ -58,7 +59,9 @@ const Navbar = () => {
       <Collapse in={showNav}>
         <section>
           <div className="content">
-            <p>Home</p>
+            <p>
+              <Link to="/">Home</Link>
+            </p>
             <p>
               Shop <FaChevronDown onClick={toggleOptions} />
             </p>

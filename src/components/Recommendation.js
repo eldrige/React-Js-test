@@ -26,10 +26,10 @@ const Recommendation = () => {
           <Col md={3}>
             <div className="text-center">
               <div className="img-card">
-                <Image src="/images/card.webp" fluid />
+                <Image src="/images/book.webp" fluid />
               </div>
               <div>
-                <h6 className="name">Bienenwachstuch Medium</h6>
+                <h6 className="name">Nudeln machen glücklich</h6>
                 <p className="price">8,00 €</p>
               </div>
             </div>

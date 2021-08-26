@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Row, Container, Col } from 'react-bootstrap';
-import people from './data';
+import { reviews as people } from './data';
 import { FaArrowRight, FaArrowLeft, FaStar } from 'react-icons/fa';
 
 const Review = () => {

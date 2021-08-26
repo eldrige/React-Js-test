@@ -25,4 +25,22 @@ const reviews = [
   },
 ];
 
-export default reviews;
+const fakeProducts = [
+  {
+    url: '/images/can.webp',
+    text: 'Organic granola Frühsportfreunde ',
+  },
+  {
+    url: '/images/card.webp',
+    text: 'Greeting Card Set Dancing Couple',
+  },
+  {
+    url: '/images/book.webp',
+    text: 'Besswap wrap medium',
+  },
+  {
+    url: '/images/book.webp',
+    text: 'Cook book + Beeswax wraps Bundle',
+  },
+];
+export { reviews, fakeProducts };
