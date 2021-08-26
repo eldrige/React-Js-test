@@ -371,3 +371,7 @@ footer#footer .social{
 #review .author div.stars p{
   font-size: 0.87rem;
 }
+
+#review .next, .prev{
+  cursor: pointer;
+}

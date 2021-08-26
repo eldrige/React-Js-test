@@ -1,35 +1,27 @@
 const reviews = [
   {
     id: 1,
-    name: 'susan smith',
-    job: 'web developer',
-    image:
-      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
-    text: "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+    name: 'Prince Eldrige',
+    date: 'April 17, 2021',
+    text: 'Super tasty gingerbread, which is pleasantly nutty and not too sweet compared to other Elisen Lebkuchen. The sustainable packaging is an innovative unique selling point and the can is now used for storage.',
   },
   {
     id: 2,
-    name: 'anna johnson',
-    job: 'web designer',
-    image:
-      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg',
-    text: 'Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.',
+    name: 'Mr Wilfried',
+    date: 'Oct 8, 2021',
+    text: 'Order was delivered the next day - great service! Gingerbreads are delicious and the tin has that certain something. Can be given away well without serving the dusty image of gingerbread in tin cans and plastic packaging.',
   },
   {
     id: 3,
-    name: 'peter jones',
-    job: 'intern',
-    image:
-      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg',
-    text: 'Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.',
+    name: 'Ludwig',
+    date: 'Aug 26, 2021',
+    text: 'Super delicious gingerbread and the cans are a great decoration and practical even without the gingerbread.',
   },
   {
     id: 4,
-    name: 'bill anderson',
-    job: 'the boss',
-    image:
-      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
-    text: 'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
+    name: 'Kira Scheimg',
+    date: 'Nov 2, 2000',
+    text: 'Incredibly delicious Elisen Lebkuchen - stylishly packaged. I would personally be happy about a vegan variant. :)',
   },
 ];
 
