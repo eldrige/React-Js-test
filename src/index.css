@@ -648,7 +648,7 @@ div#card-img{
   margin: 1rem 0 3rem 1rem;
 }
 
-#checkout .contain h2{
+#checkout .contain h2, #checkout section.wrap h2{
   color: var(--black);
   font-size: 1.5rem;
 }
@@ -716,4 +716,91 @@ div#card-img{
   text-decoration: underline;
   text-decoration-color: var(--deep-brown);
 }
+
+#checkout  section.wrap{
+  width: 90%;
+}
+
+
+/* #checkout  section.wrap .location .line{
+  height: 2px ;
+  background: var(--black);
+} */
+
+
+/* #checkout  section.wrap .location{
+  /* background: red;
+  height: 5rem;
+  position: relative; */
+/* } */ 
+
+
+#checkout  section.wrap .location .item{
+  text-align: center;
+}
+
+#checkout  section.wrap .location .item.allow{
+  color: var(--deep-brown);
+}
+
+#checkout  section.wrap .location .item.active{
+  color: var(--black);
+}
+
+#checkout  section.wrap .location .item.disallow{
+  color: rgb(104, 97, 97);
+}
+
+
+#checkout  section.wrap .location .line .item-wrapper{
+  display: flex;
+  justify-content:space-between;
+}
+
+#checkout  section.wrap .location .item .circle{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid var(--deep-brown);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#checkout  section.wrap .location .item .circle.disallow{
+  border: 1px solid rgb(104, 97, 97);
+  cursor: not-allowed;
+}
+
+#checkout  section.wrap .location .item .circle.active{
+  border: 1px solid var(--black);
+}
+
+/* #checkout  section.wrap .location .item .circle.disal */
+
+#checkout  section.wrap .description{
+  display: flex;
+  justify-content:space-between;
+  align-items: baseline;
+}
+
+#checkout  section.wrap h4, p{
+  font-size: 1rem;
+}
+#checkout  section.wrap h4{
+  font-weight: bold;
+}
+
+#checkout  section.wrap .sum, #checkout  section.wrap .total{
+  display: flex;
+  justify-content:space-between;
+  margin: 1rem 0rem;
+  border-bottom: 1px solid var(--deep-brown);
+}
+
+
+
 
