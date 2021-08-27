@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Row } from 'react-bootstrap';
 import {
   FaArrowRight,
@@ -15,6 +15,7 @@ import {
 } from 'react-icons/fa';
 
 const Footer = () => {
+  const [value, setValue] = useState('');
   return (
     <footer className="container-fluid" id="footer">
       <Row>
@@ -27,10 +28,19 @@ const Footer = () => {
                 offers. You get a 10% discount on your first order on top.
               </p>
               <div className="input-wrapper my-3 p-1">
-                <input type="text" placeholder="Enter E-mail address" />
+                <input
+                  onChange={(e) => setValue(e.target.value)}
+                  type="text"
+                  placeholder="Enter E-mail address"
+                />
                 <FaArrowRight />
               </div>
-              <button>Subscribe</button>
+              <button
+                disabled={!value}
+                className={value ? 'allowed' : 'not-allowed'}
+              >
+                subscribe
+              </button>
             </div>
           </div>
         </div>

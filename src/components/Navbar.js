@@ -59,9 +59,9 @@ const Navbar = () => {
       <Collapse in={showNav}>
         <section>
           <div className="content">
-            <p>
-              <Link to="/">Home</Link>
-            </p>
+            <Link to="/">
+              <p>Home </p>
+            </Link>
             <p>
               Shop <FaChevronDown onClick={toggleOptions} />
             </p>

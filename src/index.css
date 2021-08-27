@@ -79,6 +79,12 @@ header#navbar section div.content {
 header#navbar section div.content p{
   font-size: 2.4rem;
 }
+
+header#navbar section div.content a{
+  color: var(--deep-brown);
+  text-decoration: none;
+}
+
 header#navbar section div.content p:hover{
   border-bottom: 1px solid var(--deep-brown);
   cursor: pointer;
@@ -217,15 +223,31 @@ footer#footer .mail input{
   background: none;
 }
 
+footer#footer .mail input:focus{
+  outline: none;
+}
+
 footer#footer .mail button{
   width: 6rem;
   font-weight: bold;
-  background: transparent;
-  border: 0.3rem solid var(--black);
-  cursor: pointer;
+  color: var(--white);
   padding: .2rem .3rem;
   align-self: center;
 }
+
+footer#footer .mail button.not-allowed{
+  background:#555;
+  cursor: not-allowed;
+  border: none;
+}
+
+footer#footer .mail button.allowed{
+  background: transparent;
+  border: 0.3rem solid var(--black);
+  cursor: pointer;
+  color: var(--black)
+}
+
 
 footer#footer .p-option{
   font-size: 2rem;
@@ -537,3 +559,77 @@ div#card-img{
 #sponsors h1.text-center.text-black{
   font-size: 1.5rem;
 }
+
+/* ! Newsletter style */
+#newsletter{
+  background: var(--footer-bg);
+  height: 50vh;
+}
+
+#newsletter .letter{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+#newsletter .letter .baloon{
+  background: var(--white);
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+#newsletter .letter .img-wrapper{
+  width: 6rem;
+  height: 5rem;
+}
+
+#newsletter .letter p{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
+#newsletter .letter .input-wrapper{
+  border-bottom: 2px solid var(--black);
+  width: 60%;
+  display: flex;
+  justify-content:space-between;
+}
+
+#newsletter .letter input{
+  border: none;
+  background: none;
+}
+
+#newsletter .letter input:focus, #newsletter .letter input:focus-visible{
+  outline: none;
+}
+
+#newsletter .letter button{
+  padding: .2rem .3rem;
+  font-weight: bold;
+  width: 7rem;
+  color: var(--white);
+}
+
+#newsletter .letter button.not-allowed{
+  background:#555;
+  cursor: not-allowed;
+  border: none;
+}
+
+#newsletter .letter button.allowed{
+  background: transparent;
+  border: 0.3rem solid var(--black);
+  cursor: pointer;
+  color: var(--black)
+}
+
+#newsletter .letter button.allowed:hover{
+
+}
+
+

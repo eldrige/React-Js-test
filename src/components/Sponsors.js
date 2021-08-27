@@ -6,7 +6,7 @@ const Sponsors = () => {
     <Container fluid id="sponsors">
       <h1 className="text-center text-black pt-5 pb-2">Known From</h1>
       <Container>
-        <Row>
+        <Row className="mb-2">
           <Col md={2}>
             <Image src="/images/logoone.webp" fluid />
           </Col>

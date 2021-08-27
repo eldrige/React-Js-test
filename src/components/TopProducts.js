@@ -9,7 +9,7 @@ const TopProducts = () => {
       <div className="container">
         <div className="row">
           {fakeProducts.map((product) => (
-            <div className="col-md-3">
+            <div className="col-md-3" key={product.id}>
               <div className="custom-card">
                 <div className="image-item mb-5">
                   <Link to="/product">

@@ -26,21 +26,9 @@ const reviews = [
 ];
 
 const fakeProducts = [
-  {
-    url: '/images/can.webp',
-    text: 'Organic granola Frühsportfreunde ',
-  },
-  {
-    url: '/images/card.webp',
-    text: 'Greeting Card Set Dancing Couple',
-  },
-  {
-    url: '/images/book.webp',
-    text: 'Besswap wrap medium',
-  },
-  {
-    url: '/images/book.webp',
-    text: 'Cook book + Beeswax wraps Bundle',
-  },
+  { id: 1, url: '/images/can.webp', text: 'Organic granola Frühsportfreunde ' },
+  { id: 2, url: '/images/card.webp', text: 'Greeting Card Set Dancing Couple' },
+  { id: 3, url: '/images/book.webp', text: 'Besswap wrap medium' },
+  { id: 4, url: '/images/book.webp', text: 'Cook book + Beeswax wraps Bundle' },
 ];
 export { reviews, fakeProducts };
