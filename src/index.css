@@ -632,4 +632,88 @@ div#card-img{
 
 }
 
+/* ! checkout stlyes */
+#checkout{
+  background: var(--footer-bg)
+}
+
+#checkout .contain{
+  width: 90%;
+  margin: 1rem auto;
+}
+
+#checkout .contain h1{
+  font-size: 1.5rem;
+  color: var(--deep-brown);
+  margin: 1rem 0 3rem 1rem;
+}
+
+#checkout .contain h2{
+  color: var(--black);
+  font-size: 1.5rem;
+}
+
+#checkout .contain h3{
+  color: var(--black);
+  font-size: 1.1rem;
+}
+
+#checkout .contain input.form-control{
+  background: transparent;
+  border: 2px solid var(--deep-brown)
+}
+
+#checkout .contain input.form-control:focus, #checkout .contain input.form-control:focus-visible{
+  outline: none
+}
+
+#checkout .contain label.form-check-label{
+  font-weight: bold;
+}
+
+#checkout .contain .actions{
+  display: flex;
+  justify-content:space-between;
+  align-items: baseline;
+}
+
+#checkout .contain .actions a{
+  color: var(--deep-brown);
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+
+#checkout .contain .actions a:hover{
+  text-decoration: underline;
+  text-decoration-color: var(--deep-brown);
+}
+
+#checkout .contain .actions button{
+  background: var(--black);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem  0.2rem;
+  width: 8rem;
+  font-size: 1.1rem;
+}
+
+#checkout .contain .actions button:hover{
+  background: var(--deep-brown);
+  color: var(--black);
+}
+
+#checkout .contain .line{
+  height: 0.1rem;
+  background: var(--deep-brown);
+}
+
+#checkout .contain .mini-footer span{
+  color: var(--deep-brown);
+  cursor: pointer;
+}
+
+#checkout .contain .mini-footer span:hover{
+  text-decoration: underline;
+  text-decoration-color: var(--deep-brown);
+}
 
