@@ -3,6 +3,7 @@ import TopProducts from '../components/TopProducts';
 import ImageGrid from '../components/ImageGrid';
 import Sponsors from '../components/Sponsors';
 import NewsLetter from '../components/NewsLetter';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -27,7 +28,9 @@ const Hero = () => {
                 happy food
               </h1>
               <h3>No machine required.</h3>
-              <button>Go to Shop</button>
+              <Link to="/product">
+                <button>Go to Shop</button>
+              </Link>
             </div>
           </div>
         </div>

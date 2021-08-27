@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Row, Col, Container, Button, Collapse, Image } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Review from '../components/Review';
 import Features from '../components/Features';
 import Recommendation from '../components/Recommendation';
@@ -96,7 +97,9 @@ const ProductScreen = () => {
                         <option value="">5</option>
                       </select>
                     </div>
-                    <Button className="mb-4">add to cart</Button>
+                    <Link to="/checkout">
+                      <Button className="mb-4">add to cart</Button>
+                    </Link>
                     <div className="mb-4">
                       <div className="delivery d-flex align-items-baseline">
                         <div className="available" />

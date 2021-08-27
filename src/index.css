@@ -54,6 +54,13 @@ header#navbar ul li {
   font-size: var(--title)
 }
 
+header#navbar ul a{
+  color: var(--black);
+  text-decoration: none;
+}
+
+
+
 .icon{
   cursor: pointer;
 }

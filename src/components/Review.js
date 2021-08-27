@@ -7,9 +7,14 @@ const Review = () => {
   const [index, setIndex] = useState(0);
   const [secondIndex, setSecondIndex] = useState(1);
   const { name, date, text } = people[index];
-  const secondName = people[secondIndex].name;
-  const secondDate = people[secondIndex].date;
-  const secondText = people[secondIndex].text;
+  const {
+    name: secondName,
+    date: secondDate,
+    text: secondText,
+  } = people[secondIndex];
+  // const secondName = people[secondIndex].name;
+  // const secondDate = people[secondIndex].date;
+  // const secondText = people[secondIndex].text;
 
   console.log(people[secondIndex], 'From review.js');
 

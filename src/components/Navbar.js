@@ -25,6 +25,10 @@ const Navbar = () => {
     setShowFullNav(!showNav);
   };
 
+  const closeNav = () => {
+    setShowFullNav(false);
+  };
+
   const toggleOptions = () => {
     setShowOptions(!showOptions);
   };
@@ -51,15 +55,17 @@ const Navbar = () => {
             Shop
           </li>
           <li>Pfaizer & Frost</li>
-          <li>
-            Cart <FaShoppingBag className="icon mx-1 shoppingBag" />
-          </li>
+          <Link to="/checkout" onClick={closeNav}>
+            <li>
+              Cart <FaShoppingBag className="icon mx-1 shoppingBag" />
+            </li>
+          </Link>
         </ul>
       </Row>
       <Collapse in={showNav}>
         <section>
           <div className="content">
-            <Link to="/">
+            <Link to="/" onClick={closeNav}>
               <p>Home </p>
             </Link>
             <p>

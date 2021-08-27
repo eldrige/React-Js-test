@@ -13,7 +13,7 @@ const Recommendation = () => {
             </div>
           </Col>
           <Col md={3}>
-            <div class="text-center">
+            <div className="text-center">
               <div className="img-card">
                 <Image src="/images/card.webp" fluid />
               </div>

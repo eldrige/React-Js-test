@@ -4,21 +4,20 @@ import CheckoutScreen from './screens/CheckoutScreen';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Route, useLocation, withRouter } from 'react-router-dom';
 
 function App() {
-  const path = window.location.href;
-  let checkout = 'http://localhost:3000/checkout';
+  const { pathname } = useLocation();
 
   return (
-    <Router>
-      {path === checkout ? null : <Navbar />}
+    <>
+      {pathname === '/checkout' ? null : <Navbar />}
       <Route path="/product" component={ProductScreen} exact />
       <Route path="/" component={HomeScreen} exact />
       <Route path="/checkout" component={CheckoutScreen} exact />
-      {path === checkout ? null : <Footer />}
-    </Router>
+      {pathname === '/checkout' ? null : <Footer />}
+    </>
   );
 }
 
-export default App;
+export default withRouter(App);
