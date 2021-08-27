@@ -98,7 +98,7 @@ const CheckoutScreen = () => {
                   <h5>Subtotal</h5>
                   <p>plus shipping</p>
                 </div>
-                <div class="subtotal">
+                <div className="subtotal">
                   <h5 className="mx-4">8,00 €</h5>
                   <p>starting 3,45 €</p>
                 </div>
